@@ -3,6 +3,7 @@ package ru.tavan.batut.reservations.api.model;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -30,6 +31,9 @@ public class Person {
     @ApiModelProperty(notes = "Birth date")
     private String birthDate;
 
-    @ApiModelProperty(notes = "the roles applied to the user")
-    private List<String> roles;
+    @ApiModelProperty(notes = "The roles applied to the user")
+    private Collection<String> roles;
+
+    @ApiModelProperty(notes = "If user submitted waiver form")
+    private String isWaiverSubmitted;
 }
